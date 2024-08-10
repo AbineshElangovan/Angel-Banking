@@ -1,0 +1,332 @@
+/* Global settings */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for a professional look */
+}
+
+body {
+    background-color: #f4f4f9; /* Light grey background for a professional look */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Professional font */
+    font-weight: bolder;
+    height: 75px;
+    word-spacing: 1.5px;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+}
+
+#header img {
+    height: 75px;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+img:hover {
+    border: 5px solid #333; /* Subtle hover effect */
+    transition-duration: 0.20s;
+}
+
+#header {
+    background-color: #00416a; /* Single professional color */
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#log_sign {
+    padding-top: 25px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bolder;
+}
+
+#log_sign li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+#log_sign li a {
+    text-decoration: none;            
+    color: #ffffff; /* White for text */
+    font-size: 25px;
+}
+
+#log_sign li a:hover {
+    text-decoration: underline;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+    padding: 10px;
+    transition-duration: 0.20s;
+}
+
+a {
+    color: #333; /* Dark grey for links */
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* For small screens */
+@media(max-width: 1340px) { 
+    #header h1 {
+        display: none;
+    }
+    #header {
+        width: 100%;
+    }
+    img {
+        position: static;
+        margin: 0;
+        display: inline-block;
+        width: 300px;
+    }
+    #log_sign {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        display: inline-block;
+        width: 200px;
+    }
+}
+
+/* Nav Bar */
+.content {
+    display: none;
+}
+
+div li {
+    list-style: none;
+    display: block;
+}
+
+#navbar div {
+    display: inline-block;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #006699; /* Single professional color */
+    padding: 20px;
+    margin: 120px auto 0;
+    width: 1000px;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 100px;
+}
+
+#nav div {
+    border: 2px solid #333;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0; /* Light grey for button background */
+    color: #333; /* Dark grey for button text */
+    transition: background-color 0.25s, color 0.25s; /* Smooth transition */
+}
+
+#nav div:hover {
+    background-color: #00416a; /* Professional hover effect */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Content drop down */
+.content {
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    z-index: 1;
+    text-align: left;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #00416a; /* Professional background */
+    color: white;
+}
+
+.content li {
+    border-bottom: 2px dashed #ccc; /* Light grey dash */
+    padding: 0 10px;
+}
+
+.content li:last-child {
+    border-bottom: none;
+}
+
+.content li:hover {
+    background: linear-gradient(90deg, #799f0c, #00416a); /* Professional hover effect */
+    border-radius: 30px;
+}
+
+#nav div:hover .content {
+    display: block;    
+}
+
+/* About us */
+#foot {
+    position: fixed;
+    bottom: 0;    
+    background-image: linear-gradient(lightgreen, green); /* Professional gradient */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Calibri', sans-serif; /* Changed to Calibri font */
+}
+
+#foot a {
+    font-size: 30px; /* Increased font size */
+    font-weight: bolder;
+    color: #333; /* Changed color to dark grey */
+}
+
+#foot a:hover {
+    border-radius: 30px;
+    border: 3px solid #333;
+    padding: 5px;
+}
+
+div#disp {
+    position: relative;
+    left: 50px;
+}
+
+@media(max-height: 700px) {
+    div#disp {
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+#disp dev {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#disp p {
+    display: none;
+}
+
+input {
+    box-sizing: border-box;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid #333;
+    padding: 20px;
+    font-size: 25px;
+    padding-left: 50px;
+    width: 300px;
+    text-overflow: ellipsis;
+    margin: 15px;
+    color: black;
+}
+
+/* Slideshow pictures */
+.mySlides {
+    display: none;
+    z-index: 0;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    top: 20px;
+    left: 250px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 0;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    z-index: 0;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}

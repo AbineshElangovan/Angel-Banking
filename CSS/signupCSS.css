@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #003366;
+    color: white;
+    padding: 20px; /* Adjusted padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    position: relative; /* Allows for absolute positioning of logo */
+}
+
+#logo {
+    height: 50px; /* Enhanced size of the logo */
+    position: absolute; /* Allows positioning outside normal flow */
+    left: 20px; /* Positioned to the left of the header */
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 55px; /* Increased font size for a more prominent display */
+    text-align: center; /* Center the text */
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 25px; /* Slightly increased padding */
+    background: linear-gradient(90deg, #e0e0e0, #ffffff);
+    text-align: center;
+    width: 700px; /* Slightly increased width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid #003366;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+input {
+    height: 45px; /* Increased height */
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 18px; /* Increased font size */
+    margin: 10px 0;
+    width: 85%; /* Increased width */
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+button {
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 2px solid #003366;
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #00509e;
+    border-color: #00509e;
+}
+
+button:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#result {
+    color: #d9534f;
+    font-size: 14px;
+    text-decoration: underline;
+}

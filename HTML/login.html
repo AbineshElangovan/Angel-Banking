@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login | Angel Banking Website</title>
+        <link href="../CSS/loginCSS.css" rel="stylesheet">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="../Java Script/loginJS.js"></script>
+    </head>
+
+    <body onload="load();">
+        <div id="header">
+            <h1>Online Banking Website</h1>
+            <a href="index.html"><img src="../Images/logo.png" alt="Angel Banking Website" title="Angel Banking Website"></a>
+        </div>
+        <form id="loginForm" method="POST" onsubmit="return validateForm();">
+            <fieldset>
+                <legend>Login</legend>
+                <input type="email" placeholder="Enter your Email Address:" id="email" required><br />
+                <p>OR</p>
+                <input type="text" placeholder="Enter your Account Number:" id="accno" required><br />
+                <input type="password" placeholder="Enter your Password:" id="password" onblur="return validForm();" required><br />
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onRecaptchaSuccess"></div><br />
+                <p id="result"></p>
+                <button type="button" id="loginbtn" value="0" onclick="goto();">Log In</button>
+                <button type="reset" id="resetbtn">Reset</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
